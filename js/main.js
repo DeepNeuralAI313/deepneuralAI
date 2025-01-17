@@ -146,3 +146,9 @@ function submitcontect() {
             alert("Failed to send email. Please try again.");
         });
 }
+
+fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("footer").innerHTML = data;
+    });
