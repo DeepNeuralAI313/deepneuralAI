@@ -152,3 +152,9 @@ fetch("footer.html")
     .then(data => {
         document.getElementById("footer").innerHTML = data;
     });
+
+fetch("nevbar.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("nevbar").innerHTML = data;
+    });
