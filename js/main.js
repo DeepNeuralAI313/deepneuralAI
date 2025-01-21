@@ -73,7 +73,7 @@ function updateAmount() {
     if (document.getElementById('flask_f').checked) skills.push('Flask');
 
     const amount = document.getElementById('amounts');
-    amount.textContent = skills.length > 0 ? `$${5000 * skills.length}` : '';
+    amount.textContent = skills.length > 0 ? `$₹{5000 * skills.length}` : '';
 }
 
 function submitForm() {
