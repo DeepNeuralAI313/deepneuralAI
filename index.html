@@ -29,6 +29,11 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- 3D model -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    
 </head>
 
 <body>
@@ -95,7 +100,11 @@
                         Us</a>
                 </div>
                 <div class="col-lg-6 align-self-end text-center text-lg-end">
-                    <img class="img-fluid" src="img/hero-img.png" alt="">
+                     <div class="chat-container">
+                        <model-viewer src="models/robot_playground.glb" auto-rotate camera-controls alt="cube" background-color="#455A64" camera-orbit="0deg 90deg m" camera-target="0deg 0deg 0m" field-of-view="30deg" min-camera-orbit="auto auto 0m" max-camera-orbit="auto auto 5m"
+                            interaction-prompt="none" reveal="auto" loading="eager" poster="https://example.com/poster.jpg">
+                        </model-viewer>
+                    </div>
                 </div>
             </div>
         </div>
